@@ -36,5 +36,29 @@ $(document).ready(function() {
     });
 
 
+    //hide with resize
+
+    $(window).resize(function() {
+
+        if($(window).width() < 478) {
+            $(".menu li").hide();
+        }
+
+        else {
+            $(".menu li").fadeIn();
+        }
+    
+        if($(window).width() < 212) {
+            $(".user-name-position").hide();
+        }
+
+        else {
+            $(".user-name-position").fadeIn();
+        }
+        
+
+    });
+
+
 })
 
