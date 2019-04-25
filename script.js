@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+    //moving and replacing the slides
     $(".slides").sortable({
         placeholder: 'slide-placeholder',
        axis: "y",
@@ -40,16 +42,16 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-        if($(window).width() < 478) {
-            $(".menu li").hide();
+        if($(window).width() < 490) {
+            $(".menu li").fadeOut();
         }
 
         else {
             $(".menu li").fadeIn();
         }
     
-        if($(window).width() < 212) {
-            $(".user-name-position").hide();
+        if($(window).width() < 214) {
+            $(".user-name-position").fadeOut();
         }
 
         else {
