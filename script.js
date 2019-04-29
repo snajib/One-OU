@@ -38,6 +38,17 @@ $(document).ready(function() {
     });
 
 
+    //accordian effect
+    $( function() {
+        $( ".accordion" ).accordion({
+            active: false,
+          collapsible: true
+        });
+      } );
+
+      
+
+
     //hide with resize
 
     $(window).resize(function() {
